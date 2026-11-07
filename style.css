@@ -1,0 +1,31 @@
+:root{--bg:#f3f1ea;--c:#fff;--t:#1d2521;--m:#66716b;--a:#1f6f5c;--a2:#e4f1ec;--bd:#d9d6cb;--r:#c0392b}
+[data-theme=dark]{--bg:#121816;--c:#1b2420;--t:#e8eeea;--m:#93a199;--a:#4fc3a1;--a2:#22342d;--bd:#2c3a34;--r:#ff7b6b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--t);font:16px/1.5 "Noto Sans Bengali",system-ui,sans-serif;padding-bottom:78px}
+header{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:var(--a);color:#fff;position:sticky;top:0;z-index:5}
+header button{background:none;border:0;font-size:20px;color:#fff}
+main{max-width:640px;margin:0 auto;padding:12px}
+.card{background:var(--c);border:1px solid var(--bd);border-radius:12px;padding:14px;margin-bottom:12px}
+.card h3{margin:0 0 6px;font-size:16px}
+.big{font-size:30px;font-weight:700;margin:0;color:var(--a)}
+.mono{font-variant-numeric:tabular-nums;font-size:34px;font-weight:700;margin:4px 0}
+.bar{height:10px;background:var(--a2);border-radius:6px;overflow:hidden;margin:6px 0}
+.bar i{display:block;height:100%;background:var(--a);transition:width .4s}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+button,select,input{font:inherit;color:var(--t)}
+button{padding:9px 14px;border-radius:8px;border:1px solid var(--bd);background:var(--c)}
+button.p{background:var(--a);color:#fff;border-color:var(--a)}
+button.d{color:var(--r);border-color:var(--r)}
+button:disabled{opacity:.4}
+input,select{padding:8px;border:1px solid var(--bd);border-radius:8px;background:var(--c);max-width:100%}
+input[type=checkbox]{width:18px;height:18px;vertical-align:middle}
+.sub{color:var(--m);font-size:14px;margin:2px 0}
+p{margin:4px 0}
+nav{position:fixed;bottom:0;left:0;right:0;display:flex;overflow-x:auto;background:var(--c);border-top:1px solid var(--bd);z-index:5}
+nav a{flex:0 0 auto;min-width:76px;text-align:center;padding:8px 6px;text-decoration:none;color:var(--m);font-size:20px}
+nav a small{display:block;font-size:11px}
+nav a.on{color:var(--a);background:var(--a2)}
+.days label{margin-right:8px;font-size:14px;white-space:nowrap}
+#alarm{position:fixed;inset:0;background:rgba(0,0,0,.75);display:flex;align-items:center;justify-content:center;z-index:9}
+#alarm[hidden]{display:none}
+#alarm>div{background:var(--c);padding:24px;border-radius:14px;text-align:center;margin:16px}
